@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -86,4 +88,57 @@ a {
 
 .btn:hover {
     opacity: 0.5;
+}
+
+/*---HOME---*/
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+
+
+.title-blue {
+    display: inline;
+    color: var(--seven-color);
+    font-size: 167px;
+}
+
+.title-yellow {
+    display: inline;
+    color: var(--three-color);
+    font-family: 'Pacifico';
+    font-size: 151px;
+    position: relative;
+    top: -22%;
+}
+
+.title-orange {
+    color: var(--two-color);
+    font-size: 40px;
+    position: relative;
+    top: -36%;
+}
+
+.home-title button {
+    position: relative;
+    top: -38%;
+    background-color: var(--three-color);
+    border: none;
+    border-radius: 30px;
+    width: 45%;
+    height: 30px;
+}
+
+.home-title button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 17px;
+}
+
+.imageHome {
+    width: 50%;
 }
