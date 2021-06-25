@@ -36,7 +36,7 @@ img {
     height: 7%;
 }
 
-ul {
+.menu {
     display: flex;
     list-style: none;
 }
@@ -90,6 +90,21 @@ a {
     opacity: 0.5;
 }
 
+@media (max-width: 426px) {
+    body {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    img {
+        width: 15%;
+    }
+}
+
 /*---HOME---*/
 
 .home {
@@ -141,4 +156,34 @@ a {
 
 .imageHome {
     width: 50%;
+}
+
+@media (max-width: 426px) {
+    .home-title {
+        margin-left: 10px;
+    }
+
+    .title-blue {
+        font-size: 70px;
+    }
+
+    .title-yellow {
+        font-size: 50px;
+        top: -20%;
+    }
+
+    .title-orange {
+        font-size: 18px;
+        top: -32%;
+    }
+
+    .home-title button {
+        top: -34%;
+        width: 60%;
+        height: 20px;
+    }
+
+    .home-title button a{
+        font-size: 12px;
+    }
 }
