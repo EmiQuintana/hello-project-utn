@@ -407,3 +407,53 @@ img.stars {
     margin: 6% 15%;
     text-align: justify;
 }
+
+@media (max-width: 426px) {
+
+    .clients h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    img.client {
+        width: 40%;
+        height: 40%;
+    }
+
+    img.stars {
+        width: 10%;
+        position: relative;
+        bottom: 30px;
+        left: 15px;
+    }
+
+    .card p {
+        font-size: 8px;
+        margin: 0;
+        position: relative;
+        right: 20px;
+    }
+}
+
+/*---FOOTER---*/
+
+footer {
+    background-color: #D4D4D4;
+}
+
+.newsletter h2 {
+    color: var(--seven-color);
+    font-size: 36px;
+}
