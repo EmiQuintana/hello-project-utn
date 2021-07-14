@@ -31,6 +31,10 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    display: block;
+}
+
 img {
     width: 7%;
     height: 7%;
