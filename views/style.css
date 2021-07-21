@@ -24,44 +24,62 @@ body {
 
 /*---HEADER---*/
 
-header {
+.flex {
     display: flex;
+}
+
+header {
     margin: 1%;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    display: block;
-}
-
-img {
     width: 7%;
-    height: 7%;
 }
 
-.menu {
+.nav-menu {
+    height: 100%;
+    width: 100%;
     display: flex;
+    align-items: center;
     list-style: none;
+    padding: 0 100px;
 }
 
-li {
-    padding-right: 25px;
+.nav-menu li {
+    display: block;
+    height: 100%;
+    margin-right: 30px;
+    position: relative;
+    align-items: center;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-a {
+.nav-menu li a {
     text-decoration: none;
-    font-weight: 600;
     color: var(--seven-color);
     font-size: 14px;
+    font-weight: 600;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: flex-end;
-}
+.nav-menu li:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: -3%;
+  }
 
-.bar {
+.nav-menu li:hover::after {
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--seven-color);
+  }
+
+.busq {
     background-color: var(--seven-color);
     opacity: 0.3;
     border-radius: 40px;
@@ -74,8 +92,8 @@ a {
     height: 11px;
     width: 10px;
     position: relative;
-    right: 25px;
-    top: 1px;
+    right: 22px;
+    top: 2px;
 }
 
 .btn {
@@ -95,6 +113,7 @@ a {
 }
 
 @media (max-width: 426px) {
+
     body {
         margin: 0 auto;
         max-width: 100%;
@@ -104,7 +123,7 @@ a {
         margin: 3%;
     }
 
-    .menu {
+    .nav-menu {
         display: none;
     }
 
@@ -118,7 +137,7 @@ a {
         top: -2px;
     }
 
-    .bar {
+    .busq {
         width: 50%;
     }
 
@@ -166,12 +185,10 @@ a {
     top: -36%;
 }
 
-.home-title button {
+.orange {
     position: relative;
     top: -38%;
     background-color: var(--three-color);
-    border: none;
-    border-radius: 30px;
     width: 45%;
     height: 30px;
 }
@@ -185,6 +202,7 @@ a {
 
 .imageHome {
     width: 50%;
+    height: 50%;
 }
 
 @media (max-width: 426px) {
@@ -193,7 +211,7 @@ a {
     }
 
     .home-title {
-        margin-left: 10px;
+        margin-left: 12%;
     }
 
     .title-blue {
@@ -248,6 +266,7 @@ a {
     font-family: 'Quicksand';
     color: var(--seven-color);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .img-btn {
@@ -315,12 +334,8 @@ a {
     background-color: var(--six-color);
     color: white;
     font-size: 15px;
-    font-weight: 700;
-    border-radius: 40px;
-    border: none;
     width: 40%;
     height: 30px;
-    font-family: 'Quicksand';
 }
 
 @media (max-width: 426px) {
@@ -478,14 +493,8 @@ footer {
     height: 30px;
 }
 
-.button-send {
-    border: none;
-    background-color: var(--seven-color);
-    color: white;
-    border-radius: 40px;
+.send {
     font-size: 10px;
-    font-family: 'Quicksand';
-    font-weight: 600;
     width: 12%;
     height: 17px;
     position: relative;
@@ -494,7 +503,6 @@ footer {
 }
 
 .other {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
